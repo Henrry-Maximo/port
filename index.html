@@ -1,315 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Henrique Maximo - My Port</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/assets/logo.png"> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- importação css -->
-    <link rel="stylesheet" href="styles.css" />
+  <title>Meu Portfólio: FullStack Web Developer</title>
+ 
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body>
+  <header>
+    <span></span>
 
-    <!-- biblioteca de animação -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
-    <!-- biblioteca de icons -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-
-    <!-- biblioteca de partículas -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <!-- biblioteca de animação para texto -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-    <!-- biblioteca para rolagem suave na página -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-
-  <body>
-    <!-- partículas -->
-    <!-- <div id="particles-js" style="
-            overflow: hidden;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-          "></div> -->
-
-    <header>
-      <span
-        style="
-          display: block;
-          height: 2px;
-          width: 100%;
-          background-color: white;
-          flex: 1;
-        "
-      ></span>
-
-      <!-- Navegação principal -->
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li>
-            <i class="ph ph-house-line"></i>
-            <a href="#hero-section">Home</a>
-          </li>
-          <li>
-            <i class="ph ph-briefcase"></i>
-            <a href="#port-section">Trabalhos</a>
-          </li>
-          <li>
-            <i
-              style="border: 1px solid white; border-radius: 1rem"
-              class="ph ph-exclamation-mark"
-            ></i>
-            <a href="#about-section">Sobre</a>
-          </li>
-          <li>
-            <i class="ph ph-phone-call"></i>
-            <a href="#contact-section">Contato</a>
-          </li>
-        </ul>
-
-        <!-- <a href="#contact-section">
-        <button>Contato</button>
-      </a> -->
-      </nav>
-    </header>
-
-    <div id="hero-section">
-      <main style="display: flex; flex-direction: row">
-        <img src="./assets/henrique.png" style="height: 372px; width: 304px" />
-
-        <section>
-          <div>
-            <h1 id="app"></h1>
-            <p>
-              Olá, sou apaixonado por uma vida de estudos e
-              trabalho, além de um apreciador da cultura japonesa e um amante de
-              café (sem açúcar).
-            </p>
-          </div>
-
-          <a
-            href="" 
-            class="bg-white text-gray-600 p-8"
-          >
-            VEJA MEU PORTFÓLIO
-          </a>
-        </section>
-      </main>
-    </div>
-
-    <!-- Seção de Portfólio -->
-    <!-- <section id="port-section">
-    <div class="port">
-      <h1>Portfólio</h1>
+    <nav>
+      <a>Home</a>
+      <a>Sobre</a>
+      <a>Trabalhos</a>
+      <a>Contatos</a>
+    </nav>
+  </header>
   
-      <figure class="carousel">
-        <button class="port-button prev">
-          <i class="ph ph-arrow-left"></i>
-        </button>
-  
-        <div class="cards-wrapper">
-          <div class="cards">
-            <img src="./assets/portfolio/01.png" alt />
-            <img src="./assets/portfolio/02.jpg" alt />
-            <img src="./assets/portfolio/03.jpg" alt />
-            <img src="./assets/portfolio/04.jpg" alt />
-            <img src="./assets/portfolio/05.jpg" alt />
-            <img src="./assets/portfolio/06.jpg" alt />
-          </div>
-        </div>
-  
-        <button class="port-button next">
-          <i class="ph ph-arrow-right"></i>
-        </button>
-      </figure>
-  
-      <p>
-        Confira nosso portfólio de tatuagens, onde cada imagem revela o trabalho único
-        e apaixonado dos nossos artistas. Aqui, você encontra uma variedade de estilos –
-        desde os desenhos minimalistas até os projetos mais ousados – que transformam
-        ideias e sentimentos em arte na pele.
-      </p>
-    </div>
-  </section> -->
+  <main>
+    <img src="./assets/henrique.png" />
 
-    <!-- Seção de Equipe -->
-    <!-- <section id="group">
-    <div class="group">
-      <h1>Quem Somos</h1>
-
-      <div style="display: flex; flex-direction: column; width: 100%; gap: 2rem; padding: 0 8rem;">
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
-
-          <div style="display: flex;height: 100%; justify-content: center; align-items: center; gap: 2rem;">
-            <span style="height: 100%; width: 4px; background-color: white;"></span>
-            <p style="text-indent: 52px; width: 550px; font-weight: 200; font-size: 1.52cqmax; text-align: justify; padding: 0.25rem; color: var(--white);">
-              Conhecido pela atenção aos
-              detalhes e projetos autorais, Guilherme Borges
-              acredita que tatuar é mais do que
-              estética — é marcar momentos e
-              sentimentos de forma única e
-              duradoura.
-            </p>
-
-            <div style="display: flex; flex-direction: column;">
-              <img style="border: 1px solid white; border-radius: 24px;" height="342px" src="./assets/group/guilherme.jpg"
-                alt="Foto de Guilherme Borges" />
-              <p style="font-size: 2.12rem;">Guilherme Borges</p>
-            </div>
-          </div>
-        </div>
+    <section>
+      <div>
+        <h1>Desenvolvedor NodeJS FullStack</h1>
+        <p>Henrique Maximo</p>
       </div>
-  </section> -->
+      
+      <ul>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>NodeJS</li>
+        <li>Fastify</li>
+        <li>Express</li>
+        <li>ReactJS</li>
+        <li>CSS</li>
+        <li>CSS Modules</li>
+        <li>Tailwind</li>
+        <li>Styled-Components</li>
+        <li>Python</li>
+      </ul>
+    </section>
+  </main>
 
-    <!-- Seção de Sobre -->
-    <!-- <section id="about">
-    <div class="about">
-      <h1>Sobre</h1>
-      <div style="display: flex; flex-direction: row; gap: 4rem;">
-        <div class="text-container">
-          <span style="height: 100%; width: 4px; background-color: white;"></span>
-          <p>Minha conexão com a arte começou
-            na infância, inspirado por grafites
-            de um jogo de dança. Desde então,
-            desenvolvi habilidade com o desenho,
-            o que sempre me destacou nas artes.
-            Anos depois, minha irmã Beatriz
-            me apresentou ao universo da tatuagem,
-            e juntos mergulhamos nessa jornada.
-            Após muito estudo e prática,
-            abrimos O Borges Tattoo, onde
-            atuamos como tatuadores, unindo técnica,
-            criatividade e paixão pela arte.
-          </p>
-        </div>
+  <!-- home -->
+  <section>
+  </section>
 
-        <div class="video-container">
-          <video loop autoplay muted>
-            <source src="./assets/about/video-studio.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </section> -->
+  <!-- sobre -->
+  <section>
+  </section>
 
-    <!-- Seção de Feedback -->
-    <!-- <section id="feedback-section">
-    <div class="container-feedback">
-      <h1>Feedback</h1>
+  <!-- trabalhos -->
+  <section>
+  </section>
 
-      <div style="display: flex; flex-direction: column; flex: 1; justify-content: center;">
-        <div class="wrapper-feedback">
-          <article>
-            <figure>
-              <img class="banner" src="assets/feedback/client1-tatto.jpg" alt="tatuagem de leão" />
-            </figure>
+  <!-- contatos -->
+  <section>
+  </section>
 
-            <div class="comment">
-              <h2>Bruno Castilho</h2>
-              <p>
-                P*ta que pariu, ficou muito foda! O tigre parece que tá me encarando mesmo, mano. Nunca imaginei que ia
-                ficar tão real assim. O cara manda MUITO!
-              </p>
-            </div>
-          </article>
-          <article>
-            <figure>
-              <img class="banner" src="assets/feedback/client2-tatto.jpg" alt="tatuagem de leão" />
-            </figure>
+  <footer>
+    Copyright ©2025, todos os direitos reservados.
+  </footer>
 
-            <div class="comment">
-              <h2>Leandro Rocha</h2>
-              <p>
-                Fiz pro Coringão, né pai... Olha essa águia, esse escudo! Não tem como, ficou insano. Cada detalhe tá
-                perfeito. Agora sou ainda mais fiel, tá na pele!
-              </p>
-            </div>
-          </article>
-          <article>
-            <figure>
-              <img class="banner" src="assets/feedback/client3-tatto.jpg" alt="tatuagem de leão" />
-            </figure>
+  <script src="script.js"></script>
+</body>
 
-            <div class="comment">
-              <h2>Aline Ferreira</h2>
-              <p>
-                Ela ficou exatamente do jeitinho que eu queria. Fininha, delicada, com aquele toque de fé que mexe com a
-                gente. Eu amei, sério!
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-    <!-- Seção de Contato -->
-    <!-- <section id="contact">
-    <div class="contact">
-      <h1>Contato</h1>
-
-      <div class="contact-content">
-        <iframe class="map" style="border-radius: 1rem; border: 4px solid white;"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.4498118926165!2d-46.765963083091314!3d-23.683136167091252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5239279b4521%3A0x4abc864f457ec467!2sR.%20Santa%20Z%C3%A9lia%2C%20177%20-%20Jardim%20Santa%20Zelia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004933-110!5e0!3m2!1spt-BR!2sbr!4v1748807683014!5m2!1spt-BR!2sbr"
-          style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <p>
-          Endereço: Rua Divina Comédia, 74, Jardim Santa Zélia, São Paulo - SP, 04933-110<br>
-        </p>
-
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Tel.: +55 11 98347-8673</li>
-          <li>Email: sampatattoo@gmail.com</li>
-          <li>Segunda a Sexta: 10h - 19h</li>
-          <li>Sábado: 10h - 16h</li>
-        </ul>
-
-        <div class="social-buttons">
-          <a href="https://www.instagram.com/guiltattoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank" class="social-button instagram">
-            <i class="ph ph-instagram-logo"></i>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" class="social-button facebook">
-            <i class="ph ph-facebook-logo"></i>
-          </a>
-
-          <div class="whatsapp-button">
-            <link rel="stylesheet"
-              href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-            <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511983478673">
-              <div class="rwb-tooltip">Clique aqui e fale conosco no WhatsApp para agendar sua
-                tatuagem.</div>
-              <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <footer style="margin-bottom: 1rem;">
-        <p>© 2025 BorgesTattoo – Todos os direitos reservados.</p>
-      </footer>
-    </div>
-  </section> -->
-
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
 </html>
