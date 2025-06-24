@@ -1,48 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --background: #18181B;
+  --background: #18181b;
   --background-header: #27272a;
   --text-white: #ffffff;
-
-  --color-zinc-800: #18181B;
-  --color-zinc-900: #18181B;
-
 }
 
 * {
   margin: 0;
   padding: 0;
 
-  list-style: none;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
   background-color: var(--background);
   color: var(--text-white);
+
+  height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 
-  /* padding: 1.8rem; */
-  height: 5.2rem;
-  border-bottom: 1px solid white;
+  gap: 2rem;
 
+  height: 92px;
+  padding: 0 2rem;
   background-color: var(--background-header);
+  border-bottom: 1px solid white;
+}
 
-  span {
-    background-color: #ffffff;
-    
-    flex: 1;
-    height: 1px;
-  }
+header span {
+  flex: 1;
+  height: 2px;
+  background-color: #fff;
+}
 
-  nav {
-  }
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
 }
 
 main {
@@ -50,9 +59,64 @@ main {
   justify-content: center;
   align-items: center;
 
-  height: calc(100vh - 5.2rem);
+  gap: 6rem;
+  height: calc(100% - 92px);
 
-  img {
-    height: 462px;
+  padding: 2rem;
+}
+
+.person {
+  border: 2px solid white;
+  border-radius: 1rem;
+  height: 462px;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  max-width: 662px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
   }
+
+  div h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+  }
+
+  div p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  gap: 1rem;
+}
+
+.tech-list li {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+.tech-list img {
+  width: 24px;
+  height: 24px;
 }
