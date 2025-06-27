@@ -7,7 +7,7 @@ const typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString('Desenvolvedor Web FullStack Node.js & React.js')
+  .typeString(`Desenvolvedor <span style="color: #7c3aed">Web FullStack</span> Node.js & React.js`)
   .pauseFor(1500)
   .deleteAll()
   .typeString('Olá, tudo bem?')

@@ -4,6 +4,8 @@
   --background: #18181b;
   --background-header: #27272a;
   --text-white: #ffffff;
+
+  --color-purple: #7c3aed; 
 }
 
 * {
@@ -34,13 +36,13 @@ header {
   height: 92px;
   padding: 0 2rem;
   background-color: var(--background-header);
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid var(--color-purple);
 }
 
 header span {
   flex: 1;
   height: 2px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 header nav {
@@ -49,9 +51,24 @@ header nav {
 }
 
 header nav a {
+  display: flex;
+
+  padding: 0.2rem 0.6rem;
+  gap: 0.4rem;
+
   color: var(--text-white);
   text-decoration: none;
   font-weight: 500;
+
+  align-items: center;
+
+  border: 2px solid white;
+  border-radius: 100vh;
+}
+
+header nav a:hover {
+  color: var(--color-purple);
+  border: 2px solid var(--color-purple);
 }
 
 main {
