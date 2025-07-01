@@ -24,12 +24,12 @@ html {
 }
 
 body {
-  background-color: var(--background);
-  color: var(--text-white);
-
-  height: 100vh;
-
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
+
+  color: var(--text-white);
+  background-color: var(--background);
 }
 
 header {
@@ -37,14 +37,17 @@ header {
 
   justify-content: space-between;
   align-items: center;
+
   position: sticky;
   top: 0;
-  z-index: 100;
+  left: 0;
 
+  z-index: 100;
   gap: 2rem;
 
   height: 92px;
   padding: 0 2rem;
+
   background-color: var(--background-header);
   border-bottom: 2px solid var(--color-purple);
 }
@@ -104,8 +107,7 @@ main {
   align-items: center;
 
   gap: 6rem;
-  height: calc(100% - 92px);
-
+  height: calc(100vh - 92px);
   padding: 2rem;
 }
 
@@ -175,9 +177,8 @@ main section div p {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
-    flex: 1;
-    justify-content: left;
     gap: 2rem;
+    padding: 1rem;
   }
   
   .tech-list {
@@ -188,12 +189,17 @@ main section div p {
     display: none;
   }
   
-  #about {
+  #about, #work, #contact {
     padding: 2rem;
+    gap: 2rem;
   }
   
-  #about h1 {
+  #about h1, #work h1, #contact h1 {
     font-size: 2rem;
+  }
+  
+  .description p {
+    font-size: 1rem;
   }
   
   .description table th,
@@ -206,10 +212,14 @@ main section div p {
 #about {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding: 4rem;
-  height: calc(100% - 92px);
+
   justify-content: center;
+
+  /* padding: 4rem; */
+  /* gap: 4rem; */
+  
+  height: calc(100vh - 92px);
+  
   color: #18181b;
   background-color: white;
 }
@@ -223,13 +233,19 @@ main section div p {
 .description {
   display: flex;
   flex-direction: column;
+
+  height: 100%;
   text-align: center;
+  
   gap: 2rem;
-  max-width: 800px;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .description p {
+  display: flex;
+  align-items: center;
+  flex: 1;
   font-size: 1.1rem;
   font-weight: 200;
   line-height: 1.6;
