@@ -112,10 +112,14 @@ main {
 }
 
 .person {
-  border: 2px solid white;
-  border-radius: 1rem;
-  max-height: 100%;
-  min-height: 50%;
+  /* width: 320px; */
+  min-height: 50px;
+  height:  80%;
+  max-height: 642px;
+  object-fit: cover;
+  border: 1px solid var(--color-purple);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
 }
 
 main section {
@@ -200,6 +204,11 @@ main section div p {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
+  }
+  
+  .person {
+    width: 250px;
+    height: 300px;
   }
   
   .tech-list {
