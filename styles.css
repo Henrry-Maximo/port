@@ -252,6 +252,23 @@ main section div p {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .btn-primary, .btn-secondary {
+    justify-content: center;
+  }
 }
 
 #about {
@@ -310,4 +327,134 @@ main section div p {
 .description table th {
   font-weight: 600;
   color: var(--color-purple);
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem;
+  min-height: calc(100vh - 92px);
+  color: var(--text-white);
+  background-color: var(--background);
+}
+
+#work h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-purple);
+  margin-bottom: 1rem;
+}
+
+.work-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-purple);
+  box-shadow: 0 16px 32px rgba(124, 58, 237, 0.2);
+}
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-purple), #9333ea);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-image i {
+  font-size: 2rem;
+  color: white;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+
+.project-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.project-tech span {
+  background: rgba(124, 58, 237, 0.2);
+  color: var(--color-purple);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: var(--color-purple);
+  color: white;
+  border: 2px solid var(--color-purple);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-purple);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-white);
+  background: rgba(255, 255, 255, 0.1);
 }
