@@ -99,6 +99,7 @@ header nav a {
 header nav a:hover {
   color: var(--color-purple);
   border: 2px solid var(--color-purple);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
 }
 
 main {
@@ -293,6 +294,7 @@ main section div p {
 .description {
   display: flex;
   flex-direction: column;
+  flex: 1;
 
   height: 100%;
   text-align: center;
